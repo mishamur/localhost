@@ -1,0 +1,45 @@
+<html>
+    <head>
+
+        <title>Kife</title>
+        <meta charset="utf-8">
+        <script src = "public/js/main.js"></script>
+        <script src = "public/js/Server.js"></script>
+        <script src="public/js/game.js"></script>
+        <link rel = "stylesheet" href = "public/css/style.css">
+    </head>
+
+    <body>
+        <h1>Ну, что, народ, погнали!</h1>
+
+        <div id = "auth" >
+            <h1>Авторизация</h1>
+            <div class="inputs">
+                <input id ="login" placeholder="Логин">
+                <input id = "password" placeholder="Пароль" type = "password">
+                <div class="error displayNone" >Неправильный логин или пароль</div>
+            </div>
+        <div class="buttons">
+            <button id = "loginButton" class="button">Войти</button>
+            <button id = "registrationButton" class="button">Зарегистрироваться </button>
+        </div>
+        </div>
+        <canvas id="canvas" class="displayNone" width="288" height="512"></canvas>
+        <div id = "cookie" style = "display: none;">
+            <img src = "images/cookie.png" id = "cook" >
+        </div>
+        <div class="currResult displayNone">
+            <div class="text">Текущий результат</div>
+            <h2 class="count" id="curNumber"></h2>
+        </div>
+        <div class="bestResult displayNone">
+            <div class="text">Лучший результат</div>
+            <h2 class="count" id="bestNumber"></h2>
+        </div>
+        <div>
+            <button id ="playGame" class="button displayNone">Начать игру</button>
+            <button id = logoutButton style ="display: none;" class="button">Выйти</button>
+        </div>
+        
+    </body>
+</html>
